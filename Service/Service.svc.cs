@@ -1,5 +1,4 @@
-﻿using System;
-using System.ServiceModel;
+﻿using System.ServiceModel;
 using System.Timers;
 
 namespace Service
@@ -12,9 +11,7 @@ namespace Service
 
         public void Start()
         {
-            Console.WriteLine("> Session opened at {0}", DateTime.Now);
             Callback = OperationContext.Current.GetCallbackChannel<IServiceCallback>();
-
             Timer = new Timer(1000);
             Timer.Elapsed += OnTimerElapsed;
             Timer.Enabled = true;
