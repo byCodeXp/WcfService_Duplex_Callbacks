@@ -4,6 +4,10 @@
 
 Set attribute binding of tag endpoint to **wsDualHttpBinding**.
 
+Set attribute contract of tag endpoint to *"yourNamespace.yourServiceInterface"*
+
+Set attribute baseAddress of tag add to *"http:// localhost:8090 /yourNameSpace/YourSCVfile/"*
+
 ```
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
